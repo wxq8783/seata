@@ -1,11 +1,11 @@
-<img src="https://github.com/fescar-group/fescar-samples/blob/master/doc/img/seata.png"  height="100" width="426">
+<img src="https://github.com/seata/seata-samples/blob/master/doc/img/seata.png"  height="100" width="426">
 
 # Seata: Simple Extensible Autonomous Transaction Architecture
 
 [![Build Status](https://travis-ci.org/seata/seata.svg?branch=develop)](https://travis-ci.org/seata/seata)
 [![codecov](https://codecov.io/gh/seata/seata/branch/develop/graph/badge.svg)](https://codecov.io/gh/seata/seata)
-![license](https://img.shields.io/github/license/seata/seata.svg)
-![maven](https://img.shields.io/maven-central/v/com.alibaba.fescar/fescar-all.svg)
+[![license](https://img.shields.io/github/license/seata/seata.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
+[![maven](https://img.shields.io/maven-central/v/io.seata/seata-parent.svg)](https://search.maven.org/search?q=io.seata)
 
 ## What is Seata?
 
@@ -59,32 +59,47 @@ For more details about principle and design, please go to [Seata wiki page](http
 
 ### History
 
+##### Ant Financial
+
+- **XTS**: Extended Transaction Service. Ant Financial middleware team developed the distributed transaction middleware since 2007, which is widely used in Ant Financial and solves the problems of data consistency across databases and services.
+
+- **DTX**: Distributed Transaction Extended. Since 2013, XTS has been published on the Ant Financial Cloud, with the name of DTX .
+
+##### Alibaba
+
 - **TXC**: Taobao Transaction Constructor. Alibaba middleware team start this project since 2014 to meet distributed transaction problem caused by application architecture change from monolithic to microservices.
 - **GTS**: Global Transaction Service. TXC as an Aliyun middleware product with new name GTS was published since 2016.
 - **Fescar**: we start the open source project Fescar based on TXC/GTS since 2019 to work closely with the community in the future.
 
+
+##### Seata Community
+
+- **Seata** :Simple Extensible Autonomous Transaction Architecture. Ant Financial joins Fescar, which make it to be a more neutral and open community for distributed transaction，and Fescar be rename to Seata.
+
+
+
 ## Maven dependency
 ```xml
-<fescar.version>0.4.0</fescar.version>
+<seata.version>0.5.1</seata.version>
 
 <dependency>
-    <groupId>com.alibaba.fescar</groupId>
-    <artifactId>fescar-spring</artifactId>
-    <version>${fescar.version}</version>
+    <groupId>io.seata</groupId>
+    <artifactId>seata-spring</artifactId>
+    <version>${seata.version}</version>
 </dependency>
 
 <!--dependency for Apache Dubbo-->
 <dependency>
-    <groupId>com.alibaba.fescar</groupId>
-    <artifactId>fescar-dubbo</artifactId>
-    <version>${fescar.version}</version>
+    <groupId>io.seata</groupId>
+    <artifactId>seata-dubbo</artifactId>
+    <version>${seata.version}</version>
 </dependency>
 
 <!--dependency for Alibaba Dubbo-->
 <dependency>
-    <groupId>com.alibaba.fescar</groupId>
-    <artifactId>fescar-dubbo-alibaba</artifactId>
-    <version>${fescar.version}</version>
+    <groupId>io.seata</groupId>
+    <artifactId>seata-dubbo-alibaba</artifactId>
+    <version>${seata.version}</version>
 </dependency>
 
 ```
@@ -108,7 +123,7 @@ Contributors are welcomed to join the FEATS project. Please check [CONTRIBUTING]
 
 ## Contact
 
-* [Twitter](): TBD. Follow along for latest Fescar news on Twitter.
+* [Twitter](https://twitter.com/seataio): Follow along for latest Seata news on Twitter.
 
 * Mailing list: 
   * dev-fescar@googlegroups.com , for dev/user discussion. [subscribe](mailto:dev-fescar+subscribe@googlegroups.com), [unsubscribe](mailto:dev-fescar+unsubscribe@googlegroups.com), [archive](https://groups.google.com/forum/#!forum/dev-fescar)
@@ -120,17 +135,16 @@ Contributors are welcomed to join the FEATS project. Please check [CONTRIBUTING]
 
 ## Seata ecosystem
 
-* [Seata Ecosystem Entry](https://github.com/fescar-group) - A GitHub group `seata-group` to gather all Seata relevant projects not appropriate in [seata](https://github.com/seata) group yet
-* [Seata Samples](https://github.com/fescar-group/fescar-samples) - Samples for Seata
-* [Seata Docker](https://github.com/fescar-group/fescar-docker) - Seata integration with docker
-* [Seata K8s](https://github.com/fescar-group/fescar-k8s) - Seata integration with k8s
-* [Awesome Seata](https://github.com/fescar-group/awesome-fescar) - Description of Seata related projects 
-* [Seata Website](https://github.com/fescar-group/fescar.io) - Seata official website （***In the process of design***）
+* [Seata Ecosystem Entry](https://github.com/seata) - A GitHub group `seata` to gather all Seata relevant projects
+* [Seata Samples](https://github.com/seata/seata-samples) - Samples for Seata
+* [Seata Docker](https://github.com/seata/seata-docker) - Seata integration with docker
+* [Seata K8s](https://github.com/seata/seata-k8s) - Seata integration with k8s
+* [Awesome Seata](https://github.com/seata/awesome-seata) - Description of Seata related projects 
+* [Seata Website](https://github.com/seata/seata.github.io) - Seata official website （***In the process of design***）
 
 ## Contributors
 
-This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
-<a href="https://github.com/seata/seata/graphs/contributors"><img src="https://opencollective.com/fescar/contributors.svg?width=890&button=false" /></a>
+This project exists thanks to all the people who contribute. [[Contributors](https://github.com/seata/seata/graphs/contributors)].
 
 ## License
 
